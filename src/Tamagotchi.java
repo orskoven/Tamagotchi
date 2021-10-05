@@ -41,7 +41,7 @@ public abstract class Tamagotchi {
     }
 
 
-    public abstract String moveResponse(String name, int petAction);
+    public abstract String getMoveResponse(String name, int petAction);
 }
 
 

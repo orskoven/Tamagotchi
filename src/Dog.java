@@ -9,7 +9,7 @@ public class Dog extends Tamagotchi {
 
 
     @Override
-    public String moveResponse(String name, int petAction) {
+    public String getMoveResponse(String name, int petAction) {
         return (petAction == 1) ? name + " is running after a ball and " + name + " lost 6 in energy"
                 : (petAction == 2) ? name + " was hungry, and " + name + " got 2 in energy"
                 : name + " lost a lot of energy and wants to sleep and will get 6 in energy";

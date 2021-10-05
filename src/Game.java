@@ -40,7 +40,7 @@ public class Game {
             System.out.println(petMood);
             System.out.println("What would you like to do?\n1 - play\n2 - feed\n3 - sleep");
             int petAction = scanner.nextInt();
-            System.out.println(pet.moveResponse(pet.name, petAction));
+            System.out.println(pet.getMoveResponse(pet.name, petAction));
             // This is the game mechanics that utilizes pet.energy and the timecounter
             if (petAction == 1) {
                 pet.energy -= 6;
