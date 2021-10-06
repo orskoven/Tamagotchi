@@ -25,9 +25,9 @@ public class Game {
         System.out.println("Hello, what would you like to play? Press 1 for dog and 2 for cat.");
         boolean inputChoiceFromUser = 1 == scanner.nextInt();
         System.out.println("Good choice, what's your pet's name?");
-        System.out.println(scanner.nextLine());
-        String inputPetName = scanner.nextLine();
+        String inputPetName = scanner.next();
         int petEnergy = getRandomNumber(8, 20);
+        //timer that starts at 30 seconds
         int timerCounter = 30;
         Tamagotchi pet = petInitializer(inputPetName, petEnergy, inputChoiceFromUser);
         System.out.println(inputPetName + " has " + petEnergy + " in energy!");
